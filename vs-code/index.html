@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset"utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Collaboration Request</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+
+
+  <body>
+    <h2>Alta Sisters</h2>
+    <h1 id="title">Artist Collaboration Request</h1>
+    <p id="description">Please fill out this form with the required information</p>
+
+    <form id="survey-form">
+
+      <fieldset>
+
+        <label id="name-label" for="name"><b>Enter Your Name*</b> <input id="name" type="text" name="name" placeholder="or an artist name" required></label>
+
+        <label for="channel"><b>Enter Your Channel*</b> <input id="channel" type="url" name="channel" placeholder="URL" required></label>
+
+        <label id="email-label" for="email"><b>Enter Your Email*</b> <input id="email" type="email" name="email" placeholder="alta_sisters@gmail.com" required></label>
+
+        <label id="number-label" for="number"><b>How many projects do you want to consider for collaboration?</b><input id="number" type="number" name="number" min="1" max="5" placeholder="1-5"></label>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend><b>Is your content free of political and religion content?</b></legend>
+        <label for="answer1"><input type="radio" name="free-of" id="answer1" value="yes" class="inline"/> Yes</label>
+
+        <label for="answer2"><input id="answer2" name="free-of" type="radio" value="no" class="inline"> No </label>
+
+      </fieldset>
+
+      <fieldset class="inline">
+
+        <legent><b>Field of Your Expertise:</b></legend>
+        <br>
+        <label for="music"><input name="art-field" id="music" type="checkbox" value="music" class="inline"> Music</label>
+
+        <label for="illustration"><input name="art-field" id="illustration" type="checkbox" value="illustration"class="inline"> Ilustrations</label>
+
+        <label for="books"><input name="art-field" id="books" type="checkbox" value="books" class="inline"> Books</label>
+
+        <label for="other"><input name="art-field" id="other" type="checkbox" value="other" class="inline"> Other</label>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend><b>How did you hear about us?</b></legend>
+        <label for="dropdown">
+
+          <select id="dropdown" name="statistics" class="dropdown">
+            <option class="grey" value="">(choose one)</option>
+            <option value="1">TikTok</option>
+            <option value="2">Instagram</option>
+            <option value="3">Facebook</option>
+            <option value="4">YouTube</option>
+            <option value="5">Word of mouth</option>
+            <option value="6">Other</option>
+          </select>
+        </label>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend><b>Details of your request*:</b></legend>
+        <label for="more-details">
+          <textarea id="more-details" name="details" rows="4" cols="43" placeholder="Your expectations, dates of release, financial information" required>
+          </textarea>
+        </label>
+        
+      </fieldset>
+
+      <label><input id="submit" type="submit" value="Submit"/>
+    </form>
+
+  </body>
+
+  <footer>
+  </footer>
+</html>
